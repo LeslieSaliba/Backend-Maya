@@ -11,7 +11,8 @@ const Port=5000;
 const app=express();
 app.use(express.json());
 app.use(cors());
-app.get("/", (req,res) => { res.setHeader("Access.Control.Allow.Credentials","true"); res.send("API is running..");});
+app.get("/", (req,res) => { res.setHeader("Access.Control.Allow.Credentials","true"); 
+res.send("API is running..");});
 con.Connectionf();
 app.listen(Port,()=>{
     console.log(`your are listening to port :${Port}`);
